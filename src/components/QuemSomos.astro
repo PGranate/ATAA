@@ -1,0 +1,38 @@
+---
+import { getDict, type Lang } from '../i18n';
+import { withBase } from '../lib/url';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getDict(lang);
+const bgUrl = withBase('/images/quem-somos/Vista-Aerea.jpg');
+---
+
+<section
+  id="quem-somos"
+  class="relative bg-cream py-20 md:py-28 bg-cover bg-bottom bg-no-repeat"
+  style={`background-image: url('${bgUrl}');`}
+>
+  <div class="absolute inset-0 bg-cream/70"></div>
+  <div class="relative max-w-7xl mx-auto px-4 md:px-6">
+    <h2 class="text-4xl md:text-5xl text-ink mb-10">{t.quemSomos.title}</h2>
+
+    <div class="space-y-6 text-lg md:text-xl text-ink/85 leading-relaxed mb-16">
+      <p>{t.quemSomos.p1}</p>
+      <p>{t.quemSomos.p2}</p>
+    </div>
+
+    <div class="border-t border-ink/10 pt-12">
+      <h3 class="text-2xl md:text-3xl text-teal mb-6 font-display">
+        {t.quemSomos.regionTitle}
+      </h3>
+      <div class="space-y-5 text-base md:text-lg text-ink/80 leading-relaxed max-w-4xl">
+        <p>{t.quemSomos.regionP1}</p>
+        <p>{t.quemSomos.regionP2}</p>
+        <p>{t.quemSomos.regionP3}</p>
+      </div>
+    </div>
+  </div>
+</section>

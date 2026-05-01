@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Hero from '../../components/Hero.astro';
+import OpenDay from '../../components/OpenDay.astro';
+import Patrocinios from '../../components/Patrocinios.astro';
+import QuemSomos from '../../components/QuemSomos.astro';
+import Direcao from '../../components/Direcao.astro';
+import Contactos from '../../components/Contactos.astro';
+import Footer from '../../components/Footer.astro';
+import { locales, type Lang } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Lang };
+---
+
+<Layout lang={lang}>
+  <Nav lang={lang} />
+  <main>
+    <Hero lang={lang} />
+    <OpenDay lang={lang} />
+    <Patrocinios lang={lang} />
+    <QuemSomos lang={lang} />
+    <Direcao lang={lang} />
+    <Contactos lang={lang} />
+  </main>
+  <Footer lang={lang} />
+</Layout>

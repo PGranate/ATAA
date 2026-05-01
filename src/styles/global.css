@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #1F6F7F;
+  --color-teal-700: #155560;
+  --color-teal-900: #0E1C1F;
+  --color-gold: #C9A227;
+  --color-gold-700: #A6851D;
+  --color-cream: #F7F3EC;
+  --color-ink: #0E1C1F;
+
+  --font-display: "Bebas Neue", "Oswald", "Anton", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-cream);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+.hero-slide {
+  animation: heroFade var(--hero-duration, 24s) infinite;
+  opacity: 0;
+}
+
+@keyframes heroFade {
+  0%, 25% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}

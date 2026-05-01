@@ -1,0 +1,114 @@
+---
+import { getDict, type Lang, locales } from '../i18n';
+import { withBase } from '../lib/url';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = getDict(lang);
+
+const links = [
+  { href: '#inicio',      label: t.nav.inicio      },
+  { href: '#open-day',    label: t.nav.openDay     },
+  { href: '#patrocinios', label: t.nav.patrocinios },
+  { href: '#quem-somos',  label: t.nav.quemSomos   },
+  { href: '#direcao',     label: t.nav.direcao     },
+  { href: '#contactos',   label: t.nav.contactos   },
+];
+---
+
+<header class="fixed top-0 inset-x-0 z-50 bg-cream/90 backdrop-blur border-b border-ink/5">
+  <nav class="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-4">
+    <a href={withBase(`/${lang}/`)} class="flex items-center shrink-0" aria-label="CAIA — Spirit of Triathlon">
+      <img src={withBase('/logo-horizontal.png')} alt="CAIA — Spirit of Triathlon" class="h-12 w-auto" />
+    </a>
+
+    <ul class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink">
+      {links.map((l) => (
+        <li>
+          <a
+            href={l.href}
+            class="hover:text-teal transition-colors uppercase tracking-wider text-[13px]"
+          >
+            {l.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="flex items-center gap-2 shrink-0">
+      <ul class="hidden md:flex items-center gap-1 text-xs font-semibold uppercase">
+        {locales.map((loc) => (
+          <li>
+            <a
+              href={withBase(`/${loc}/`)}
+              class:list={[
+                'px-2 py-1 rounded transition-colors',
+                loc === lang
+                  ? 'bg-teal text-cream'
+                  : 'text-ink/60 hover:text-teal',
+              ]}
+            >
+              {loc}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 -mr-2 text-ink"
+        aria-label="Menu"
+        aria-expanded="false"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-ink/5 bg-cream">
+    <ul class="px-6 py-4 space-y-3 text-sm font-medium">
+      {links.map((l) => (
+        <li>
+          <a href={l.href} class="block py-1 hover:text-teal uppercase tracking-wider text-[13px]">
+            {l.label}
+          </a>
+        </li>
+      ))}
+      <li class="pt-3 border-t border-ink/10">
+        <ul class="flex items-center gap-2 text-xs font-semibold uppercase">
+          {locales.map((loc) => (
+            <li>
+              <a
+                href={withBase(`/${loc}/`)}
+                class:list={[
+                  'px-3 py-1.5 rounded',
+                  loc === lang ? 'bg-teal text-cream' : 'text-ink/60',
+                ]}
+              >
+                {loc}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script is:inline>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    menu.querySelectorAll('a').forEach((a) =>
+      a.addEventListener('click', () => menu.classList.add('hidden'))
+    );
+  }
+</script>
