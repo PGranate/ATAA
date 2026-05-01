@@ -2,12 +2,9 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// Deployed to GitHub Pages at https://pgranate.github.io/ATAA/
-// Once a custom domain (e.g. caia-triatlo.pt) is set up, change `site` to
-// the domain root and clear `base` (or set base: '/').
+// Deployed via Vercel at root. When a custom domain (e.g. caia-triatlo.pt)
+// is connected, set `site` to it for proper canonical URLs + sitemap.
 export default defineConfig({
-  site: 'https://pgranate.github.io',
-  base: '/ATAA/',
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt', 'es', 'en'],
