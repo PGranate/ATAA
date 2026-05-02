@@ -2,9 +2,10 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// Deployed via Vercel at root. When a custom domain (e.g. caia-triatlo.pt)
-// is connected, set `site` to it for proper canonical URLs + sitemap.
+// Deployed via Vercel at https://caiatriatlo.pt. `site` powers canonical
+// URLs and the sitemap.
 export default defineConfig({
+  site: 'https://caiatriatlo.pt',
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt', 'es', 'en'],

@@ -8,7 +8,7 @@ export const SITE = {
   lumaEventId: 'evt-XEDi3UAiwfnFeNG',
 
   socials: {
-    facebook: 'https://www.facebook.com/profile.php?id=61573452540881',
+    facebook: 'https://www.facebook.com/profile.php?id=61588968459322',
     instagram: 'https://www.instagram.com/caia_spirit_of_triathlon/',
   },
 
