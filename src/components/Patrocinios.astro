@@ -26,7 +26,7 @@ const tierGrid = {
 const Tier = ({ items, kind, label }: { items: Slot[]; kind: keyof typeof tierClasses; label: string }) => null; // typed-only helper
 ---
 
-<section id="patrocinios" class="bg-white py-20 md:py-28">
+<section id="patrocinios" data-animate="fade-up" class="bg-white py-20 md:py-28">
   <div class="max-w-7xl mx-auto px-4 md:px-6">
     <h2 class="text-4xl md:text-5xl text-ink mb-3">{t.patrocinios.title}</h2>
     <p class="text-lg text-ink/70 max-w-2xl mb-12">{t.patrocinios.intro}</p>
