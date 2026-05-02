@@ -9,7 +9,7 @@ export const SITE = {
 
   socials: {
     facebook: 'https://www.facebook.com/profile.php?id=61588968459322',
-    instagram: 'https://www.instagram.com/caia_spirit_of_triathlon/',
+    instagram: 'https://www.instagram.com/caiatriatlo/',
   },
 
   // Hero carousel slides. Drop images into public/images/hero/ and add an
