@@ -40,10 +40,8 @@ export const SITE = {
       { logo: null, name: null, url: null },
       { logo: null, name: null, url: null },
       { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
     ],
     parceiros: [
-      { logo: null, name: null, url: null },
       { logo: null, name: null, url: null },
       { logo: null, name: null, url: null },
       { logo: null, name: null, url: null },
