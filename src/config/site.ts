@@ -2,6 +2,12 @@
 // live in src/i18n/*.ts — this file is for non-translatable values.
 
 export const SITE = {
+  // Master switch for the registration flow. Set to false until the event has
+  // municipal authorization — disables both Luma CTAs (Hero + Open Day) and
+  // overlays an "Em breve" banner on the Open Day section. Flip to `true`
+  // when registration is ready to open publicly.
+  registrationOpen: false,
+
   // Luma event for the Open Day. The button.js embed intercepts clicks and
   // opens Luma's checkout modal in-place; the href is the fallback.
   lumaEventUrl: 'https://luma.com/event/evt-XEDi3UAiwfnFeNG',
@@ -51,13 +57,4 @@ export const SITE = {
     ],
   },
 
-  // Direção photos. Set `photo` to a path under /public/images/team/.
-  // Names + roles come from the i18n dictionary.
-  team: [
-    { photo: null },
-    { photo: null },
-    { photo: null },
-    { photo: null },
-    { photo: null },
-  ],
 };

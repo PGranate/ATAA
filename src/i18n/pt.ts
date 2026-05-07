@@ -16,6 +16,7 @@ export const pt = {
     title: 'CAIA — Spirit of Triathlon',
     tagline: 'Vem fazer parte do espírito do triatlo.',
     cta: 'Inscrever no Open Day',
+    ctaPending: 'Fica atento!',
   },
   openDay: {
     label: 'Próximo evento',
@@ -41,6 +42,8 @@ export const pt = {
     ],
     cta: 'Inscrever-me',
     ctaSubtext: 'Não fiques de fora!',
+    emBreve: 'Em breve',
+    emBreveSubtitle: 'As inscrições abrem em breve.',
     downloads: {
       regulamento: 'Regulamento',
       percursos: 'Percursos',
@@ -69,12 +72,33 @@ export const pt = {
   },
   direcao: {
     title: 'Associação',
-    members: [
-      { name: 'Nome a definir', role: 'Presidente' },
-      { name: 'Nome a definir', role: 'Vice-Presidente' },
-      { name: 'Nome a definir', role: 'Secretário' },
-      { name: 'Nome a definir', role: 'Tesoureiro' },
-      { name: 'Nome a definir', role: 'Vogal' },
+    groups: [
+      {
+        title: 'Mesa da Assembleia Geral',
+        members: [
+          { name: 'Manuel Carlos Pereira Caldeira Fernandes', role: 'Presidente' },
+          { name: 'Manuel Maria Tomé Pimenta Belmiro', role: 'Vice-Presidente' },
+          { name: 'José Carlos Sereno Fonseca', role: 'Secretário' },
+        ],
+      },
+      {
+        title: 'Direção',
+        members: [
+          { name: 'Pedro de Sousa Barbas Caldeira Fernandes', role: 'Presidente' },
+          { name: 'Nelson André Alcácer Valente', role: 'Vice-Presidente' },
+          { name: 'José Augusto Fernandes Piedade', role: 'Secretário' },
+          { name: 'Manuel António Vitorino da Silva', role: 'Tesoureiro' },
+          { name: 'Fernando Manuel Moreira Trindade', role: 'Vogal' },
+        ],
+      },
+      {
+        title: 'Conselho Fiscal',
+        members: [
+          { name: 'Pedro Mirante Granate', role: 'Presidente' },
+          { name: 'Ricardo Pinheiro', role: 'Vice-Presidente' },
+          { name: 'Luís Miguel Marques Mendes', role: 'Secretário' },
+        ],
+      },
     ],
   },
   contactos: {
