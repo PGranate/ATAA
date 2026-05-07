@@ -35,7 +35,7 @@ export const en = {
       { icon: 'run',  distance: '5 km',  label: 'Run'   },
     ],
     facts: [
-      { icon: 'donation', badge: '€5', label: 'Donated to Santa Casa da Misericórdia de Campo Maior' },
+      { icon: 'donation', badge: null, label: 'Donated to Santa Casa da Misericórdia de Campo Maior' },
       { icon: 'people',   badge: null, label: 'Limited to 50 participants' },
       { icon: 'drink',    badge: null, label: 'Drink voucher included' },
       { icon: 'kit',      badge: null, label: 'Participation kit included' },

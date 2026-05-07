@@ -35,7 +35,7 @@ export const pt = {
       { icon: 'run',  distance: '5 km',  label: 'Corrida'  },
     ],
     facts: [
-      { icon: 'donation', badge: '5€', label: 'Doar à Santa Casa da Misericórdia de Campo Maior' },
+      { icon: 'donation', badge: null, label: 'Doar à Santa Casa da Misericórdia de Campo Maior' },
       { icon: 'people',   badge: null, label: 'Inscrição limitada a 50 participantes' },
       { icon: 'drink',    badge: null, label: 'Inclui senha de bebida' },
       { icon: 'kit',      badge: null, label: 'Inclui kit de participação' },
