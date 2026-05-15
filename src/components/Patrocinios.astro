@@ -28,9 +28,19 @@ const tierClasses = {
 };
 
 const tierGrid = {
-  principais: 'grid-cols-1 md:grid-cols-3 gap-4',
-  apoios: 'grid-cols-2 md:grid-cols-4 gap-3',
-  parceiros: 'grid-cols-3 md:grid-cols-6 gap-3',
+  principais: 'grid grid-cols-1 md:grid-cols-3 gap-4',
+  apoios: 'grid grid-cols-2 md:grid-cols-4 gap-3',
+  // Flex-wrap so the partially-filled trailing row stays centered.
+  parceiros: 'flex flex-wrap justify-center gap-3',
+};
+
+// Extra per-slot classes — used to pin tier-3 items to a fixed basis
+// (matches what a 3/6-col grid would give) so flex-wrap layout looks
+// identical to the previous grid for full rows.
+const tierItemClasses = {
+  principais: '',
+  apoios: '',
+  parceiros: 'basis-[calc((100%_-_1.5rem)/3)] md:basis-[calc((100%_-_3.75rem)/6)] grow-0 shrink-0',
 };
 
 const Tier = ({ items, kind, label }: { items: Slot[]; kind: keyof typeof tierClasses; label: string }) => null; // typed-only helper
@@ -42,16 +52,17 @@ const Tier = ({ items, kind, label }: { items: Slot[]; kind: keyof typeof tierCl
     <p class="text-lg text-ink/70 max-w-2xl mb-12">{t.patrocinios.intro}</p>
 
     {(['principais', 'apoios', 'parceiros'] as const).map((tier) => (
-      <div class="mb-12 last:mb-0">
+      <div class="mb-8 last:mb-0">
         <h3 class="text-sm uppercase tracking-[0.25em] text-teal font-semibold mb-5">
           {t.patrocinios.tiers[tier]}
         </h3>
-        <div class:list={['grid', tierGrid[tier]]}>
+        <div class:list={[tierGrid[tier]]}>
           {SITE.sponsors[tier].map((slot) => (
             <div
               class:list={[
                 'flex items-center justify-center rounded-xl transition',
                 tierClasses[tier],
+                tierItemClasses[tier],
                 slot.logo
                   ? 'bg-cream'
                   : 'border-2 border-dashed border-ink/15 bg-cream/40 text-ink/40 hover:border-teal/40 hover:text-teal/60',

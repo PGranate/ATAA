@@ -38,14 +38,14 @@ export const SITE = {
   sponsors: {
     principais: [
       { logo: '/images/sponsors/cm-campo-maior.svg', name: 'Câmara Municipal de Campo Maior', url: 'https://www.cm-campo-maior.pt/' },
-      { logo: null, name: null, url: null },
+      { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com', scale: 0.92 },
       { logo: null, name: null, url: null },
     ],
     apoios: [
       { logo: '/images/sponsors/analizza.png', name: 'Analizza', url: 'https://analizza.pt', offsetY: 8 },
-      { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com' },
       { logo: '/images/sponsors/fito-gr.png', name: 'Fito GR', url: 'https://www.facebook.com/fitogrlojaagricola/', scale: 1.15 },
       { logo: '/images/sponsors/carnalentejana.png', name: 'Carnalentejana', url: 'https://www.carnalentejana.com/', scale: 1.3, offsetY: -9 },
+      { logo: '/images/sponsors/revo.png', name: 'Revo', url: 'https://www.revo.energy/' },
     ],
     parceiros: [
       { logo: '/images/sponsors/bricoelvas.png', name: 'Bricoelvas', url: 'https://bricoelvas.pt' },
@@ -54,6 +54,8 @@ export const SITE = {
       { logo: '/images/sponsors/ambisolution.png', name: 'Ambisolution', url: 'https://ambisolution.pt', scale: 1.2 },
       { logo: '/images/sponsors/casas-alentejo.png', name: 'Casas Alentejo', url: 'https://www.casasalentejo.pt/' },
       { logo: '/images/sponsors/vendap.svg', name: 'Vendap', url: 'https://www.vendap.pt/' },
+      { logo: '/images/sponsors/sabrab.png', name: 'Sabrab', url: 'https://sabrab.com/en/' },
+      { logo: '/images/sponsors/regascampo.png', name: 'Regas Campo', url: 'https://regascampo.pt/', scale: 1.5 },
     ],
   },
 
