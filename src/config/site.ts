@@ -37,23 +37,23 @@ export const SITE = {
   // to render a real logo. Leave null for "Espaço disponível" placeholder.
   sponsors: {
     principais: [
-      { logo: null, name: null, url: null },
+      { logo: '/images/sponsors/cm-campo-maior.svg', name: 'Câmara Municipal de Campo Maior', url: 'https://www.cm-campo-maior.pt/' },
       { logo: null, name: null, url: null },
       { logo: null, name: null, url: null },
     ],
     apoios: [
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
+      { logo: '/images/sponsors/analizza.png', name: 'Analizza', url: 'https://analizza.pt', offsetY: 8 },
+      { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com' },
+      { logo: '/images/sponsors/fito-gr.png', name: 'Fito GR', url: 'https://www.facebook.com/fitogrlojaagricola/', scale: 1.15 },
+      { logo: '/images/sponsors/carnalentejana.png', name: 'Carnalentejana', url: 'https://www.carnalentejana.com/', scale: 1.15 },
     ],
     parceiros: [
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
-      { logo: null, name: null, url: null },
+      { logo: '/images/sponsors/bricoelvas.png', name: 'Bricoelvas', url: 'https://bricoelvas.pt' },
+      { logo: '/images/sponsors/infinite-glassworks.png', name: 'Infinite Glassworks', url: 'https://infinitegw.com/' },
+      { logo: '/images/sponsors/astteca.png', name: 'Astteca', url: 'https://www.facebook.com/p/Astteca-Topografia-Servi%C3%A7os-de-topografia-Lda-100054499148000/', scale: 1.2 },
+      { logo: '/images/sponsors/ambisolution.png', name: 'Ambisolution', url: 'https://ambisolution.pt', scale: 1.2 },
+      { logo: '/images/sponsors/casas-alentejo.png', name: 'Casas Alentejo', url: 'https://www.casasalentejo.pt/' },
+      { logo: '/images/sponsors/vendap.svg', name: 'Vendap', url: 'https://www.vendap.pt/' },
     ],
   },
 
