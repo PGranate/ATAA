@@ -17,6 +17,7 @@ export const pt = {
     tagline: 'Vem fazer parte do espírito do triatlo.',
     cta: 'Inscrever no Open Day',
     ctaPending: 'Fica atento!',
+    photoCredit: 'Foto: Duarte Pinto · © A Terceira Dimensão',
   },
   openDay: {
     label: 'Próximo evento',

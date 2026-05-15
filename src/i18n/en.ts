@@ -17,6 +17,7 @@ export const en = {
     tagline: 'Come and be part of the spirit of triathlon.',
     cta: 'Register for the Open Day',
     ctaPending: 'Stay tuned!',
+    photoCredit: 'Photo: Duarte Pinto · © A Terceira Dimensão',
   },
   openDay: {
     label: 'Upcoming event',
