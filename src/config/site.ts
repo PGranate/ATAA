@@ -55,6 +55,8 @@ export const SITE = {
       { logo: '/images/sponsors/sabrab.png', name: 'Sabrab', url: 'https://sabrab.com/en/' },
       { logo: '/images/sponsors/regascampo.png', name: 'Regas Campo', url: 'https://regascampo.pt/', scale: 1.5 },
       { logo: '/images/sponsors/fertiprado.png', name: 'Fertiprado', url: 'https://fertiprado.pt/' },
+      { logo: '/images/sponsors/thisolution.png', name: 'Thisolution', url: 'https://www.thisolution.pt/' },
+      { logo: '/images/sponsors/fisiotreino.png', name: 'Fisiotreino', url: 'http://www.fisiotreino.pt/', scale: 0.88 },
     ],
   },
 
