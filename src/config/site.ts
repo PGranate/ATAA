@@ -39,7 +39,7 @@ export const SITE = {
     principais: [
       { logo: '/images/sponsors/cm-campo-maior.svg', name: 'Câmara Municipal de Campo Maior', url: 'https://www.cm-campo-maior.pt/' },
       { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com', scale: 0.92 },
-      { logo: null, name: null, url: null },
+      { logo: '/images/sponsors/elcristo.png', name: 'El Cristo', url: 'https://www.elcristo.pt/' },
     ],
     apoios: [
       { logo: '/images/sponsors/analizza.png', name: 'Analizza', url: 'https://analizza.pt', offsetY: 8 },
@@ -56,6 +56,7 @@ export const SITE = {
       { logo: '/images/sponsors/vendap.svg', name: 'Vendap', url: 'https://www.vendap.pt/' },
       { logo: '/images/sponsors/sabrab.png', name: 'Sabrab', url: 'https://sabrab.com/en/' },
       { logo: '/images/sponsors/regascampo.png', name: 'Regas Campo', url: 'https://regascampo.pt/', scale: 1.5 },
+      { logo: '/images/sponsors/fertiprado.png', name: 'Fertiprado', url: 'https://fertiprado.pt/' },
     ],
   },
 
