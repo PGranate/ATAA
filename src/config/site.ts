@@ -41,13 +41,11 @@ export const SITE = {
       { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com', scale: 0.92 },
       { logo: '/images/sponsors/elcristo.png', name: 'El Cristo', url: 'https://www.elcristo.pt/' },
     ],
-    apoios: [
+    patrocinadores: [
       { logo: '/images/sponsors/analizza.png', name: 'Analizza', url: 'https://analizza.pt', offsetY: 8 },
       { logo: '/images/sponsors/fito-gr.png', name: 'Fito GR', url: 'https://www.facebook.com/fitogrlojaagricola/', scale: 1.15 },
       { logo: '/images/sponsors/carnalentejana.png', name: 'Carnalentejana', url: 'https://www.carnalentejana.com/', scale: 1.3, offsetY: -9 },
       { logo: '/images/sponsors/revo.png', name: 'Revo', url: 'https://www.revo.energy/' },
-    ],
-    parceiros: [
       { logo: '/images/sponsors/bricoelvas.png', name: 'Bricoelvas', url: 'https://bricoelvas.pt' },
       { logo: '/images/sponsors/infinite-glassworks.png', name: 'Infinite Glassworks', url: 'https://infinitegw.com/' },
       { logo: '/images/sponsors/astteca.png', name: 'Astteca', url: 'https://www.facebook.com/p/Astteca-Topografia-Servi%C3%A7os-de-topografia-Lda-100054499148000/', scale: 1.2 },

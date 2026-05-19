@@ -55,8 +55,7 @@ export const es = {
     intro: 'El Open Day es posible gracias al apoyo de nuestros socios.',
     tiers: {
       principais: 'Patrocinadores Principales',
-      apoios: 'Apoyos',
-      parceiros: 'Colaboradores',
+      patrocinadores: 'Patrocinadores',
     },
     espacoDisponivel: 'Espacio disponible',
     pitch: '¿Quieres asociar tu marca al espíritu del triatlón en el Alto Alentejo?',

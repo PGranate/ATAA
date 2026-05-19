@@ -23,24 +23,21 @@ const hoverClass = (slot: Slot) =>
 
 const tierClasses = {
   principais: 'h-40 md:h-48',
-  apoios: 'h-36 md:h-40',
-  parceiros: 'h-28 md:h-32',
+  patrocinadores: 'h-32 md:h-36',
 };
 
 const tierGrid = {
   principais: 'grid grid-cols-1 md:grid-cols-3 gap-4',
-  apoios: 'grid grid-cols-2 md:grid-cols-4 gap-3',
   // Flex-wrap so the partially-filled trailing row stays centered.
-  parceiros: 'flex flex-wrap justify-center gap-3',
+  patrocinadores: 'flex flex-wrap justify-center gap-3',
 };
 
-// Extra per-slot classes — used to pin tier-3 items to a fixed basis
-// (matches what a 3/6-col grid would give) so flex-wrap layout looks
-// identical to the previous grid for full rows.
+// Per-slot widths for tier-2 — fixed basis matches a 3-col mobile /
+// 5-col desktop grid so full rows look uniform while flex-wrap keeps
+// the trailing row centered.
 const tierItemClasses = {
   principais: '',
-  apoios: '',
-  parceiros: 'basis-[calc((100%_-_1.5rem)/3)] md:basis-[calc((100%_-_3.75rem)/6)] grow-0 shrink-0',
+  patrocinadores: 'basis-[calc((100%_-_1.5rem)/3)] md:basis-[calc((100%_-_3rem)/5)] grow-0 shrink-0',
 };
 
 const Tier = ({ items, kind, label }: { items: Slot[]; kind: keyof typeof tierClasses; label: string }) => null; // typed-only helper
@@ -51,7 +48,7 @@ const Tier = ({ items, kind, label }: { items: Slot[]; kind: keyof typeof tierCl
     <h2 class="text-4xl md:text-5xl text-ink mb-3">{t.patrocinios.title}</h2>
     <p class="text-lg text-ink/70 max-w-2xl mb-12">{t.patrocinios.intro}</p>
 
-    {(['principais', 'apoios', 'parceiros'] as const).map((tier) => (
+    {(['principais', 'patrocinadores'] as const).map((tier) => (
       <div class="mb-8 last:mb-0">
         <h3 class="text-sm uppercase tracking-[0.25em] text-teal font-semibold mb-5">
           {t.patrocinios.tiers[tier]}
