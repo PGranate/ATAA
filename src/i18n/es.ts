@@ -6,7 +6,7 @@ export const es = {
   nav: {
     inicio: 'Inicio',
     openDay: 'Open Day',
-    patrocinios: 'Patrocinadores',
+    patrocinios: 'Apoyos',
     quemSomos: 'Quiénes Somos',
     direcao: 'Asociación',
     contactos: 'Contacto',
@@ -51,12 +51,8 @@ export const es = {
     },
   },
   patrocinios: {
-    title: 'Patrocinadores',
+    title: 'Apoyos',
     intro: 'El Open Day es posible gracias al apoyo de nuestros socios.',
-    tiers: {
-      principais: 'Patrocinadores Principales',
-      patrocinadores: 'Patrocinadores',
-    },
     espacoDisponivel: 'Espacio disponible',
     pitch: '¿Quieres asociar tu marca al espíritu del triatlón en el Alto Alentejo?',
     cta: 'Quiero patrocinar',

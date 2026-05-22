@@ -35,29 +35,25 @@ export const SITE = {
 
   // Sponsor slots. Set `logo` to an image path under /public/images/sponsors/
   // to render a real logo. Leave null for "Espaço disponível" placeholder.
-  sponsors: {
-    principais: [
-      { logo: '/images/sponsors/cm-campo-maior.svg', name: 'Câmara Municipal de Campo Maior', url: 'https://www.cm-campo-maior.pt/' },
-      { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com', scale: 0.92 },
-      { logo: '/images/sponsors/elcristo.png', name: 'El Cristo', url: 'https://www.elcristo.pt/' },
-    ],
-    patrocinadores: [
-      { logo: '/images/sponsors/analizza.png', name: 'Analizza', url: 'https://analizza.pt', offsetY: 8 },
-      { logo: '/images/sponsors/fito-gr.png', name: 'Fito GR', url: 'https://www.facebook.com/fitogrlojaagricola/', scale: 1.15 },
-      { logo: '/images/sponsors/carnalentejana.png', name: 'Carnalentejana', url: 'https://www.carnalentejana.com/', scale: 1.3, offsetY: -9 },
-      { logo: '/images/sponsors/revo.png', name: 'Revo', url: 'https://www.revo.energy/' },
-      { logo: '/images/sponsors/bricoelvas.png', name: 'Bricoelvas', url: 'https://bricoelvas.pt' },
-      { logo: '/images/sponsors/infinite-glassworks.png', name: 'Infinite Glassworks', url: 'https://infinitegw.com/' },
-      { logo: '/images/sponsors/astteca.png', name: 'Astteca', url: 'https://www.facebook.com/p/Astteca-Topografia-Servi%C3%A7os-de-topografia-Lda-100054499148000/', scale: 1.2 },
-      { logo: '/images/sponsors/ambisolution.png', name: 'Ambisolution', url: 'https://ambisolution.pt', scale: 1.2 },
-      { logo: '/images/sponsors/casas-alentejo.png', name: 'Casas Alentejo', url: 'https://www.casasalentejo.pt/' },
-      { logo: '/images/sponsors/vendap.svg', name: 'Vendap', url: 'https://www.vendap.pt/' },
-      { logo: '/images/sponsors/sabrab.png', name: 'Sabrab', url: 'https://sabrab.com/en/' },
-      { logo: '/images/sponsors/regascampo.png', name: 'Regas Campo', url: 'https://regascampo.pt/', scale: 1.5 },
-      { logo: '/images/sponsors/fertiprado.png', name: 'Fertiprado', url: 'https://fertiprado.pt/' },
-      { logo: '/images/sponsors/thisolution.png', name: 'Thisolution', url: 'https://www.thisolution.pt/' },
-      { logo: '/images/sponsors/fisiotreino.png', name: 'Fisiotreino', url: 'http://www.fisiotreino.pt/', scale: 0.88 },
-    ],
-  },
+  sponsors: [
+    { logo: '/images/sponsors/cm-campo-maior.svg', name: 'Câmara Municipal de Campo Maior', url: 'https://www.cm-campo-maior.pt/' },
+    { logo: '/images/sponsors/delta.png', name: 'Delta Cafés', url: 'https://deltacafes.com', scale: 0.92 },
+    { logo: '/images/sponsors/elcristo.png', name: 'El Cristo', url: 'https://www.elcristo.pt/' },
+    { logo: '/images/sponsors/analizza.png', name: 'Analizza', url: 'https://analizza.pt', offsetY: 8 },
+    { logo: '/images/sponsors/fito-gr.png', name: 'Fito GR', url: 'https://www.facebook.com/fitogrlojaagricola/', scale: 1.15 },
+    { logo: '/images/sponsors/carnalentejana.png', name: 'Carnalentejana', url: 'https://www.carnalentejana.com/', scale: 1.3, offsetY: -9 },
+    { logo: '/images/sponsors/revo.png', name: 'Revo', url: 'https://www.revo.energy/' },
+    { logo: '/images/sponsors/bricoelvas.png', name: 'Bricoelvas', url: 'https://bricoelvas.pt' },
+    { logo: '/images/sponsors/infinite-glassworks.png', name: 'Infinite Glassworks', url: 'https://infinitegw.com/' },
+    { logo: '/images/sponsors/astteca.png', name: 'Astteca', url: 'https://www.facebook.com/p/Astteca-Topografia-Servi%C3%A7os-de-topografia-Lda-100054499148000/', scale: 1.2 },
+    { logo: '/images/sponsors/ambisolution.png', name: 'Ambisolution', url: 'https://ambisolution.pt', scale: 1.2 },
+    { logo: '/images/sponsors/casas-alentejo.png', name: 'Casas Alentejo', url: 'https://www.casasalentejo.pt/' },
+    { logo: '/images/sponsors/vendap.svg', name: 'Vendap', url: 'https://www.vendap.pt/' },
+    { logo: '/images/sponsors/sabrab.png', name: 'Sabrab', url: 'https://sabrab.com/en/' },
+    { logo: '/images/sponsors/regascampo.png', name: 'Regas Campo', url: 'https://regascampo.pt/', scale: 1.5 },
+    { logo: '/images/sponsors/fertiprado.png', name: 'Fertiprado', url: 'https://fertiprado.pt/' },
+    { logo: '/images/sponsors/thisolution.png', name: 'Thisolution', url: 'https://www.thisolution.pt/' },
+    { logo: '/images/sponsors/fisiotreino.png', name: 'Fisiotreino', url: 'http://www.fisiotreino.pt/', scale: 0.88 },
+  ],
 
 };
