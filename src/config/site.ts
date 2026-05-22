@@ -6,7 +6,7 @@ export const SITE = {
   // municipal authorization — disables both Luma CTAs (Hero + Open Day) and
   // overlays an "Em breve" banner on the Open Day section. Flip to `true`
   // when registration is ready to open publicly.
-  registrationOpen: false,
+  registrationOpen: true,
 
   // Luma event for the Open Day. The button.js embed intercepts clicks and
   // opens Luma's checkout modal in-place; the href is the fallback.
@@ -31,6 +31,14 @@ export const SITE = {
     swim: '/images/open-day/swim.jpeg' as string | null,
     bike: '/images/open-day/bike.jpeg' as string | null,
     run:  '/images/open-day/run.jpg' as string | null,
+  },
+
+  // Public Garmin Connect courses for each leg. When set, the matching
+  // leg card becomes a link that opens the course in a new tab.
+  openDayCourses: {
+    swim: 'https://connect.garmin.com/app/course/455355844' as string | null,
+    bike: 'https://connect.garmin.com/app/course/457724961' as string | null,
+    run:  'https://connect.garmin.com/app/course/455359466' as string | null,
   },
 
   // Sponsor slots. Set `logo` to an image path under /public/images/sponsors/

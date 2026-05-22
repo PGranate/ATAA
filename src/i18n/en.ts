@@ -36,8 +36,8 @@ export const en = {
       { icon: 'run',  distance: '5 km',  label: 'Run'   },
     ],
     facts: [
-      { icon: 'donation', badge: null, label: 'Donated to Santa Casa da Misericórdia de Campo Maior' },
-      { icon: 'people',   badge: null, label: 'Limited to 50 participants' },
+      { icon: 'fee', badge: null, label: 'Registration fee' },
+      { icon: 'people',   badge: null, label: 'Limited to 70 participants' },
       { icon: 'drink',    badge: null, label: 'Drink voucher included' },
       { icon: 'kit',      badge: null, label: 'Participation kit included' },
     ],
@@ -45,6 +45,7 @@ export const en = {
     ctaSubtext: 'Don\'t miss out!',
     emBreve: 'Coming soon',
     emBreveSubtitle: 'Registration opens soon.',
+    verPercurso: 'View course',
     downloads: {
       regulamento: 'Rules',
       percursos: 'Courses',
@@ -96,6 +97,11 @@ export const en = {
         ],
       },
     ],
+    socio: {
+      question: 'Want to become a member?',
+      downloadLabel: 'Download the membership application',
+      instruction: 'and email it filled in to',
+    },
   },
   contactos: {
     title: 'Contact',
