@@ -6,7 +6,7 @@ export const SITE = {
   // municipal authorization — disables both Luma CTAs (Hero + Open Day) and
   // overlays an "Em breve" banner on the Open Day section. Flip to `true`
   // when registration is ready to open publicly.
-  registrationOpen: false,
+  registrationOpen: true,
 
   // Luma event for the Open Day. The button.js embed intercepts clicks and
   // opens Luma's checkout modal in-place; the href is the fallback.
