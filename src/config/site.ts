@@ -37,7 +37,7 @@ export const SITE = {
   // leg card becomes a link that opens the course in a new tab.
   openDayCourses: {
     swim: 'https://connect.garmin.com/app/course/455355844' as string | null,
-    bike: 'https://connect.garmin.com/app/course/457724961' as string | null,
+    bike: 'https://connect.garmin.com/app/course/468355684' as string | null,
     run:  'https://connect.garmin.com/app/course/455359466' as string | null,
   },
 
