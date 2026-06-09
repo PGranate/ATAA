@@ -62,6 +62,9 @@ export const SITE = {
     { logo: '/images/sponsors/fertiprado.png', name: 'Fertiprado', url: 'https://fertiprado.pt/' },
     { logo: '/images/sponsors/thisolution.png', name: 'Thisolution', url: 'https://www.thisolution.pt/' },
     { logo: '/images/sponsors/fisiotreino.png', name: 'Fisiotreino', url: 'http://www.fisiotreino.pt/', scale: 0.88 },
+    { logo: '/images/sponsors/creativeled.png', name: 'Creative LED', url: 'https://www.creativeled.pt/' },
+    { logo: '/images/sponsors/construserv.png', name: 'Construserv', url: 'https://www.construserv.pt/' },
+    { logo: '/images/sponsors/amatoscar.png', name: 'Amatos Car', url: 'https://www.amatoscar.pt/' },
   ],
 
 };
