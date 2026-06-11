@@ -9,6 +9,9 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = getDict(lang);
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImageUrl = new URL('/og-image.jpg', Astro.site).toString();
 ---
 
 <!doctype html>
@@ -17,7 +20,25 @@ const t = getDict(lang);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={t.meta.description} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/png" href={withBase('/favicon.png')} />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CAIA — Spirit of Triathlon" />
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang === 'pt' ? 'pt_PT' : lang === 'es' ? 'es_ES' : 'en_GB'} />
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={t.meta.title} />
+    <meta name="twitter:description" content={t.meta.description} />
+    <meta name="twitter:image" content={ogImageUrl} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
