@@ -65,6 +65,10 @@ export const SITE = {
     { logo: '/images/sponsors/creativeled.png', name: 'Creative LED', url: 'https://www.creativeled.pt/' },
     { logo: '/images/sponsors/construserv.png', name: 'Construserv', url: 'https://www.construserv.pt/' },
     { logo: '/images/sponsors/amatoscar.png', name: 'Amatos Car', url: 'https://www.amatoscar.pt/' },
+    { logo: '/images/sponsors/ramalho-pinheiro.png', name: 'Ramalho Pinheiro', url: 'https://www.facebook.com/p/Ramalho-Pinheiro-100057514958209/' },
+    { logo: '/images/sponsors/duvale.png', name: 'DuVale', url: 'https://www.instagram.com/duvale.pt/' },
+    { logo: '/images/sponsors/banco-montepio.png', name: 'Banco Montepio', url: 'https://www.bancomontepio.pt/' },
+    { logo: '/images/sponsors/stand-digital.png', name: 'Stand Digital', url: 'https://www.standigital.pt/', scale: 0.88 },
   ],
 
 };
