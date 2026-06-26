@@ -38,7 +38,7 @@ export const SITE = {
   openDayCourses: {
     swim: 'https://connect.garmin.com/app/course/455355844' as string | null,
     bike: 'https://connect.garmin.com/app/course/468355684' as string | null,
-    run:  'https://connect.garmin.com/app/course/455359466' as string | null,
+    run:  'https://connect.garmin.com/app/course/479052794' as string | null,
   },
 
   // Sponsor slots. Set `logo` to an image path under /public/images/sponsors/

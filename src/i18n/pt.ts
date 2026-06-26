@@ -32,7 +32,7 @@ export const pt = {
     intro: 'Uma manhã de desporto, comunidade e solidariedade no coração do Alto Alentejo.',
     legs: [
       { icon: 'swim', distance: '1 km', label: 'Natação' },
-      { icon: 'bike', distance: '30 km', label: 'Ciclismo' },
+      { icon: 'bike', distance: '35 km', label: 'Ciclismo' },
       { icon: 'run',  distance: '5 km',  label: 'Corrida'  },
     ],
     facts: [
