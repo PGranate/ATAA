@@ -7,6 +7,7 @@ export const es = {
     inicio: 'Inicio',
     openDay: 'Open Day',
     patrocinios: 'Apoyos',
+    novidades: 'Novedades',
     quemSomos: 'Quiénes Somos',
     direcao: 'Asociación',
     contactos: 'Contacto',
@@ -49,6 +50,37 @@ export const es = {
     downloads: {
       regulamento: 'Reglamento',
       percursos: 'Recorridos',
+    },
+  },
+  novidades: {
+    title: 'Novedades',
+    intro: 'Lo que va pasando en CAIA. Síguenos en Instagram para más.',
+    followCta: 'Seguir en Instagram',
+    viewPost: 'Ver publicación',
+    igHandle: 'caiatriatlo',
+    kinds: {
+      upcoming: 'Próximo',
+      recap: 'Resumen',
+      training: 'Entreno',
+      news: 'Novedad',
+    },
+    items: {
+      triatloCross: {
+        title: 'Triatlón Cross · 3 de octubre',
+        caption: '2 km de natación, 20 km de BTT off-road, 2 km de carrera. Grupo pequeño, sin estrés. Manda DM para apuntarte.',
+      },
+      aquatloRecap: {
+        title: 'Aquatlón · mañana en el pontón',
+        caption: 'Agua buena, sol acompañando, café al final. Gracias a todos los que vinieron — ya pensamos en el próximo.',
+      },
+      aquatloTraining: {
+        title: 'Vuelta · entreno técnico de aquatlón',
+        caption: '12 de septiembre, Barragem do Caia. 2 km en aguas abiertas + 4 km de carrera. Inicio de temporada.',
+      },
+      openDayRecap: {
+        title: 'Open Day 2026 · en 90 segundos',
+        caption: '70 personas, 3 disciplinas, 1 día. Nuestro primer Open Day — gracias a quienes hicieron parte. Hasta 2027.',
+      },
     },
   },
   patrocinios: {

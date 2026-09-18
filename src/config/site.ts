@@ -41,6 +41,25 @@ export const SITE = {
     run:  'https://connect.garmin.com/app/course/479052794' as string | null,
   },
 
+  // Highlights pulled from the association's social feeds. Each entry is a
+  // card on the homepage that links out to the original post. Newest first.
+  // Drop cover images into /public/images/novidades/. `key` picks up the
+  // matching title/caption from src/i18n/*.ts under `novidades.items`.
+  // Kind: 'recap' | 'upcoming' | 'training' | 'news' — drives the badge.
+  // Leave the array empty to hide the section.
+  novidades: [
+    { key: 'triatloCross',    kind: 'upcoming', date: '2026-09-17', cover: '/images/novidades/triatlo-cross.jpg',    url: 'https://www.instagram.com/p/DdYtNdem61G/' },
+    { key: 'aquatloRecap',    kind: 'recap',    date: '2026-09-13', cover: '/images/novidades/aquatlo-recap.jpg',    url: 'https://www.instagram.com/p/DdPchYBmCPQ/' },
+    { key: 'aquatloTraining', kind: 'training', date: '2026-08-31', cover: '/images/novidades/aquatlo-training.jpg', url: 'https://www.instagram.com/p/DcuB4YYFutC/' },
+    { key: 'openDayRecap',    kind: 'recap',    date: '2026-07-03', cover: '/images/novidades/open-day-recap.jpg',   url: 'https://www.instagram.com/p/DaWQGYuEpgD/' },
+  ] as Array<{
+    key: string;
+    kind: 'recap' | 'upcoming' | 'training' | 'news';
+    date: string;
+    cover: string;
+    url: string;
+  }>,
+
   // Sponsor slots. Set `logo` to an image path under /public/images/sponsors/
   // to render a real logo. Leave null for "Espaço disponível" placeholder.
   sponsors: [
