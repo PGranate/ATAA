@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import Hero from '../../components/Hero.astro';
-import OpenDay from '../../components/OpenDay.astro';
 import Patrocinios from '../../components/Patrocinios.astro';
 import QuemSomos from '../../components/QuemSomos.astro';
 import Direcao from '../../components/Direcao.astro';
@@ -21,7 +20,6 @@ const { lang } = Astro.params as { lang: Lang };
   <Nav lang={lang} />
   <main>
     <Hero lang={lang} />
-    <OpenDay lang={lang} />
     <Patrocinios lang={lang} />
     <QuemSomos lang={lang} />
     <Direcao lang={lang} />

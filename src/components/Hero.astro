@@ -49,33 +49,9 @@ const slideStyle = `--hero-duration: ${totalDuration}s;`;
       <h1 class="text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-6">
         {t.hero.title}
       </h1>
-      <p class="text-xl md:text-2xl text-cream/90 mb-10 max-w-xl">
+      <p class="text-xl md:text-2xl text-cream/90 max-w-xl">
         {t.hero.tagline}
       </p>
-      {SITE.registrationOpen ? (
-        <a
-          href={SITE.lumaEventUrl}
-          data-luma-action="checkout"
-          data-luma-event-id={SITE.lumaEventId}
-          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-700 text-ink font-semibold px-7 py-4 rounded-full uppercase tracking-wider text-sm transition-colors"
-        >
-          {t.hero.cta}
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
-      ) : (
-        <span
-          aria-disabled="true"
-          class="inline-flex items-center gap-2 bg-cream/20 text-cream/70 ring-1 ring-cream/30 backdrop-blur-sm font-semibold px-7 py-4 rounded-full uppercase tracking-wider text-sm cursor-not-allowed select-none"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg>
-          {t.hero.ctaPending}
-        </span>
-      )}
     </div>
   </div>
 
