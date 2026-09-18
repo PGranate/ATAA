@@ -1,6 +1,18 @@
 // Edit-only constants used across the site. Strings that need translating
 // live in src/i18n/*.ts — this file is for non-translatable values.
 
+// Shape of the event shown in the hero. Translatable copy (title, eyebrow,
+// CTA, leg labels) lives in src/i18n/*.ts under hero.event; this is structure.
+export type NextEvent = {
+  date: string;              // ISO, e.g. '2026-10-03'
+  time: string;              // as displayed, e.g. '08:30'
+  place: string;
+  placeSub: string;
+  legs: Array<{ icon: 'swim' | 'bike' | 'run'; value: string; label: string }>;
+  ctaUrl: string;
+  image: string | null;      // optional hero photo override
+};
+
 export const SITE = {
   // Master switch for the registration flow. Set to false until the event has
   // municipal authorization — disables both Luma CTAs (Hero + Open Day) and
@@ -12,6 +24,27 @@ export const SITE = {
   // opens Luma's checkout modal in-place; the href is the fallback.
   lumaEventUrl: 'https://luma.com/event/evt-XEDi3UAiwfnFeNG',
   lumaEventId: 'evt-XEDi3UAiwfnFeNG',
+
+  // Items for the thin scrolling strip under the hero. Empty array hides it.
+  // A 'Label: text' item renders the label in gold.
+  ticker: ['Próximo evento: Treino Triatlo Cross · 03.10.2026', '@caiatriatlo', '#JuntosNoCaia', 'caiatriatlo.pt', 'Barragem do Caia · Campo Maior'] as string[],
+
+
+  // Next event poster in the hero. Set to `null` to fall back to the brand
+  // hero (title + tagline). Nothing else on the page depends on this.
+  nextEvent: {
+    date: '2026-10-03',
+    time: '08:30',
+    place: 'Barragem do Caia',
+    placeSub: 'Campo Maior',
+    legs: [
+      { icon: 'swim', value: '2000 m', label: 'swim' },
+      { icon: 'bike', value: '20 km',  label: 'bikeOffroad' },
+      { icon: 'run',  value: '2 km',   label: 'run' },
+    ],
+    ctaUrl: 'https://ig.me/m/caiatriatlo',
+    image: null,
+  } as NextEvent | null,
 
   socials: {
     facebook: 'https://www.facebook.com/profile.php?id=61588968459322',

@@ -1,0 +1,33 @@
+---
+// Thin scrolling strip with the handle, hashtag and domain, echoing the footer
+// line on the social posts. Two identical tracks make the loop seamless.
+import { SITE } from '../config/site';
+// Each track repeats the items enough times to be wider than any viewport;
+// otherwise a gap shows once the first track has scrolled past.
+const REPEAT = 4;
+const items = Array.from({ length: REPEAT }, () => SITE.ticker).flat();
+---
+
+{SITE.ticker.length > 0 && (
+  <div class="bg-ink text-cream/80 overflow-hidden border-y border-cream/10" aria-hidden="true">
+    <div class="ticker flex w-max whitespace-nowrap text-[12px] font-semibold uppercase tracking-[0.22em] py-3">
+      {[0, 1].map(() => (
+        <div class="flex shrink-0 items-center">
+          {items.map((it) => (
+            <span class="flex items-center">
+              {it.includes(': ') ? (
+                <span>
+                  <span class="text-gold">{it.split(': ')[0]}:</span>{' '}
+                  <span class="text-cream">{it.split(': ').slice(1).join(': ')}</span>
+                </span>
+              ) : (
+                <span class:list={[it.startsWith('#') && 'text-gold']}>{it}</span>
+              )}
+              <span class="mx-6 inline-block h-1.5 w-1.5 rounded-full bg-gold/70"></span>
+            </span>
+          ))}
+        </div>
+      ))}
+    </div>
+  </div>
+)}

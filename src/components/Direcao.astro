@@ -9,14 +9,14 @@ const { lang } = Astro.props;
 const t = getDict(lang);
 ---
 
-<section id="direcao" data-animate="fade-up" class="bg-white py-20 md:py-28">
-  <div class="max-w-7xl mx-auto px-4 md:px-6">
-    <h2 class="text-4xl md:text-5xl text-ink mb-12">{t.direcao.title}</h2>
+<section id="direcao" class="bg-cream py-20 md:py-28">
+  <div data-animate="fade-up" class="max-w-7xl mx-auto px-4 md:px-6">
+    <h2 class="text-3xl md:text-5xl text-ink mb-12">{t.direcao.title}</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
       {t.direcao.groups.map((group) => (
         <div>
-          <h3 class="text-sm uppercase tracking-[0.25em] text-teal font-semibold mb-5 pb-3 border-b border-ink/10">
+          <h3 class="text-xs uppercase !tracking-[0.22em] text-teal font-semibold mb-5 pb-3 border-b border-ink/10">
             {group.title}
           </h3>
           <ul class="space-y-4">

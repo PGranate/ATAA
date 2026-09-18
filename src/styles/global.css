@@ -3,14 +3,44 @@
 @theme {
   --color-teal: #1F6F7F;
   --color-teal-700: #155560;
-  --color-teal-900: #0E1C1F;
+  --color-teal-900: #0E2A30;
   --color-gold: #C9A227;
   --color-gold-700: #A6851D;
   --color-cream: #F7F3EC;
   --color-ink: #0E1C1F;
 
-  --font-display: "Bebas Neue", "Oswald", "Anton", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  /* Tighter radius scale: cards and chips read sharper, closer to the posts.
+     Buttons and badges use rounded-full and are unaffected. */
+  --radius-md: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.25rem;
+  --radius-2xl: 0.375rem;
+  --radius-3xl: 0.5rem;
+}
+
+/* Eyebrow: small tracked caps with a short gold rule, as on the social posts. */
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+@utility eyebrow-rule {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 2.5rem;
+    height: 1px;
+    background: var(--color-gold);
+    flex: none;
+  }
 }
 
 html {
@@ -26,7 +56,9 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  letter-spacing: 0.01em;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.02;
 }
 
 .hero-slide {
@@ -37,4 +69,20 @@ h1, h2, h3 {
 @keyframes heroFade {
   0%, 25% { opacity: 1; }
   33%, 100% { opacity: 0; }
+}
+
+/* Scrolling strip (Ticker.astro): two identical tracks, shift by half. */
+.ticker {
+  animation: ticker 70s linear infinite;
+}
+@keyframes ticker {
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker { animation: none; }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
 }
