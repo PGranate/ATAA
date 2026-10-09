@@ -7,7 +7,8 @@ interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const t = getDict(lang);
 
-const items = SITE.novidades;
+// Show the four most recent; keep older entries in the config for history.
+const items = SITE.novidades.slice(0, 4);
 const itemCopy = t.novidades.items as Record<string, { title: string; caption: string }>;
 const kindLabels = t.novidades.kinds as Record<string, string>;
 

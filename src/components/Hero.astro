@@ -135,6 +135,10 @@ const legLabels = t.hero.event.legLabels as Record<string, string>;
               </li>
             </ul>
 
+            {t.hero.event.note && (
+              <p class="text-[12px] leading-snug text-cream/70 mb-4 -mt-1">{t.hero.event.note}</p>
+            )}
+
             <a
               href={ev.ctaUrl}
               target="_blank"

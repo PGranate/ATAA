@@ -27,20 +27,20 @@ export const SITE = {
 
   // Items for the thin scrolling strip under the hero. Empty array hides it.
   // A 'Label: text' item renders the label in gold.
-  ticker: ['Próximo evento: Treino Triatlo Cross · 03.10.2026', '@caiatriatlo', '#JuntosNoCaia', 'caiatriatlo.pt', 'Barragem do Caia · Campo Maior'] as string[],
+  ticker: ['Próximo evento: Treino Tri Mix · 24.10.2026', '@caiatriatlo', '#JuntosNoCaia', 'caiatriatlo.pt', 'Barragem do Caia · Campo Maior'] as string[],
 
 
   // Next event poster in the hero. Set to `null` to fall back to the brand
   // hero (title + tagline). Nothing else on the page depends on this.
   nextEvent: {
-    date: '2026-10-03',
+    date: '2026-10-24',
     time: '08:30',
     place: 'Barragem do Caia',
     placeSub: 'Campo Maior',
     legs: [
-      { icon: 'swim', value: '2000 m', label: 'swim' },
-      { icon: 'bike', value: '20 km',  label: 'bikeOffroad' },
-      { icon: 'run',  value: '2 km',   label: 'run' },
+      { icon: 'swim', value: '2 × 1 km', label: 'swim' },
+      { icon: 'run',  value: '2 × 2 km', label: 'run' },
+      { icon: 'bike', value: '40 km',    label: 'bike' },
     ],
     ctaUrl: 'https://ig.me/m/caiatriatlo',
     image: null,
@@ -81,7 +81,8 @@ export const SITE = {
   // Kind: 'recap' | 'upcoming' | 'training' | 'news' — drives the badge.
   // Leave the array empty to hide the section.
   novidades: [
-    { key: 'triatloCross',    kind: 'upcoming', date: '2026-09-17', cover: '/images/novidades/triatlo-cross.jpg',    url: 'https://www.instagram.com/p/DdYtNdem61G/' },
+    { key: 'triMix',          kind: 'upcoming', date: '2026-10-09', cover: '/images/novidades/tri-mix.jpg',          url: 'https://www.instagram.com/caiatriatlo/' },
+    { key: 'triatloCross',    kind: 'training', date: '2026-09-17', cover: '/images/novidades/triatlo-cross.jpg',    url: 'https://www.instagram.com/p/DdYtNdem61G/' },
     { key: 'aquatloRecap',    kind: 'recap',    date: '2026-09-13', cover: '/images/novidades/aquatlo-recap.jpg',    url: 'https://www.instagram.com/p/DdPchYBmCPQ/' },
     { key: 'aquatloTraining', kind: 'training', date: '2026-08-31', cover: '/images/novidades/aquatlo-training.jpg', url: 'https://www.instagram.com/p/DcuB4YYFutC/' },
     { key: 'openDayRecap',    kind: 'recap',    date: '2026-07-03', cover: '/images/novidades/open-day-recap.jpg',   url: 'https://www.instagram.com/p/DaWQGYuEpgD/' },

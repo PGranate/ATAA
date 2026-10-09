@@ -1,7 +1,7 @@
 export const en = {
   meta: {
     title: 'CAIA — Spirit of Triathlon',
-    description: 'Triathlon Association of Alto Alentejo. Open Day · 27 June 2026 · Barragem do Caia.',
+    description: 'Triathlon Association of Alto Alentejo. Training sessions and events at the Caia reservoir, Campo Maior.',
   },
   nav: {
     inicio: 'Home',
@@ -25,9 +25,10 @@ export const en = {
     event: {
       badge: 'Next event',
       eyebrow: 'Train with CAIA',
-      titleMain: 'Cross Triathlon',
+      titleMain: 'Tri Mix',
       titleAccent: 'Training',
-      subtitle: 'Swim · MTB · Run · Off‑road',
+      subtitle: '(Swim + Run) ×2 · Bike',
+      note: 'Last session at the Caia reservoir · Group lunch 10€, sign up by 21 Oct.',
       cta: 'DM us to sign up',
       secondary: 'About CAIA',
       labels: { date: 'Date', time: 'Time' },
@@ -79,6 +80,10 @@ export const en = {
       news: 'News',
     },
     items: {
+      triMix: {
+        title: 'Tri Mix training · 24 October',
+        caption: '(1 km swim + 2 km run) ×2 + 40 km bike. Last session at the Caia reservoir, with a surprise aid station and a group lunch.',
+      },
       triatloCross: {
         title: 'Cross Triathlon · October 3',
         caption: '2 km swim, 20 km off-road MTB, 2 km run. Small group, low key. DM us to join.',
